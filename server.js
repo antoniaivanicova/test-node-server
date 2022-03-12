@@ -9,8 +9,9 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.json({
+        env: process.env,
         test: 123,
     })
 })
 
-app.listen(PORT, '0.0.0.0')
+app.listen(PORT, undefined)
